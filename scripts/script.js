@@ -261,6 +261,46 @@ function percipitation () {
       p[0].appendChild(d);
     }
   }
+
+// Tones 
+const synth = new Tone.PolySynth({
+    oscillator: {
+        type: 'sine'
+      },
+      envelope: {
+        attack: 0.1,
+        decay: 2,
+        sustain: 0.8,
+        release: 5
+      }
+  }).toMaster();
+  
+function synthFire() {
+    let randomOct = Math.floor((Math.random() * 4) + 1);
+    let notes = ['A', 'D', 'C', 'G', 'C'];
+    let note = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
+    let noteTwo = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
+    let noteThree = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
+    let noteFour = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
+    console.log(note + noteTwo + noteThree + noteFour);
+    let now = Tone.now();
+  
+    progression = [
+      ['C2', 'C4', 'D3'],
+      [],
+      []
+    ];
+    synth.triggerAttackRelease([note, noteTwo, noteFour], "8n", now);
+  }
+  
+
+document.addEventListener('click', function (event) {
+	if (!event.target.matches('.clickable')) return;
+	event.preventDefault();
+    console.log(event.target);
+    synthFire()
+}, false);
+
 // Acknowledgments:::::::: //////////////////////////////
 // Shout out to Sarah Higley's Falling Leaves simulation,
 // && a special shout out to  A. Rickles's rain effect.
