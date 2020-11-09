@@ -7,7 +7,11 @@ body {
     height: 100vh;
     width: 100%;
     background-color: black;
+    background-size: 400% 400%;
     overflow: hidden;
+    -webkit-animation: bg-pulse 14s ease infinite;
+    -moz-animation: bg-pulse 14s ease infinite;
+    animation: bg-pulse 14s ease infinite;
 }
 
 .sprite-scene {
@@ -108,4 +112,20 @@ body {
 }
 .summer {
     background: url("../assets/summer.png");
+}
+
+@-webkit-keyframes bg-pulse {
+    0%{background-position:42% 0%}
+    50%{background-position:59% 100%}
+    100%{background-position:42% 0%}
+}
+@-moz-keyframes bg-pulse {
+    0%{background-position:42% 0%}
+    50%{background-position:59% 100%}
+    100%{background-position:42% 0%}
+}
+@keyframes bg-pulse {
+    0%{background-position:42% 0%}
+    50%{background-position:59% 100%}
+    100%{background-position:42% 0%}
 }
