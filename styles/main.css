@@ -15,7 +15,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: black;
-    background-size: 400% 400%;
+    background-size: 200% 200%;
     overflow: hidden;
     -webkit-animation: bg-pulse 14s ease infinite;
     -moz-animation: bg-pulse 14s ease infinite;
