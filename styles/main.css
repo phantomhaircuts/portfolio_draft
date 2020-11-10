@@ -178,8 +178,14 @@ body {
 }
 
 @media only screen and (max-width: 858px) {
+  .wrapper-wrapper {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
   .content-wrapper {
     display: block;
+    padding-top: 1.5rem;
   }
   .case-study-img {
     width: 100%;
