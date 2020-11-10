@@ -1,13 +1,48 @@
+html {
+  box-sizing: border-box;
+  }
+  *, *:before, *:after {
+  box-sizing: inherit;
+  }
+
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
+.content-wrapper {
+  position: absolute;
+  z-index: 1000;
+  height: 90vh;
+  width: 96vw;
+  margin: 2vw;
+  background: rgba(90, 90, 90, 0.1);
+  overflow-y: scroll;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 100px 100px;
+  grid-template-areas: 
+    "a b b"
+    "a b b";
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+
+#product {
+  width: 500px;
+
+}
+
 .clickable {
     height:100vh;
     width: 100vw;
-    z-index: 99999;
+    z-index: 100;
     /* background-color: red; */
     position: absolute;
 }

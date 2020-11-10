@@ -318,7 +318,7 @@ document.addEventListener('click', function (event) {
 document.addEventListener('touchstart', function (event) {
 	if (!event.target.matches('.touchable')) return;
 	event.preventDefault();
-    console.log(event.target);
+    console.log(event.target + 'touch');
     toneFire()
 }, false);
 
