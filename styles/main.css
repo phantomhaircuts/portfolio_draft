@@ -32,6 +32,8 @@ body {
   grid-gap: .5rem;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 100px 100px;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-areas: 
     "a b b"
     "a b b";
@@ -174,4 +176,10 @@ body {
     0%{background-position:42% 0%}
     50%{background-position:59% 100%}
     100%{background-position:42% 0%}
+}
+
+@media only screen and (max-width: 858px) {
+  .content-wrapper {
+    display: block;
+  }
 }
