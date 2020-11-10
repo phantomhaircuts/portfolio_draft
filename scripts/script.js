@@ -307,8 +307,16 @@ function toneFire(){
     player.autostart = true;
 }
 
+//handle click
 document.addEventListener('click', function (event) {
 	if (!event.target.matches('.clickable')) return;
+	event.preventDefault();
+    console.log(event.target);
+    toneFire()
+}, false);
+// handle touch
+document.addEventListener('touchstart', function (event) {
+	if (!event.target.matches('.touchable')) return;
 	event.preventDefault();
     console.log(event.target);
     toneFire()
