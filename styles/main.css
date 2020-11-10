@@ -24,7 +24,6 @@ body {
   height: 84vh;
   width: 92vw;
   margin: 2vw;
-  
   overflow-y: scroll;
   padding: 1vw;
   display: grid;
@@ -181,5 +180,8 @@ body {
 @media only screen and (max-width: 858px) {
   .content-wrapper {
     display: block;
+  }
+  .case-study-img {
+    width: 100%;
   }
 }
