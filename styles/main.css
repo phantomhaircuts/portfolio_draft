@@ -25,6 +25,7 @@ body {
   width: 92vw;
   margin: 2vw;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   padding: 1vw;
   display: grid;
   grid-template-rows: auto;
@@ -193,4 +194,9 @@ body {
   .case-study-img {
     width: 100%;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
