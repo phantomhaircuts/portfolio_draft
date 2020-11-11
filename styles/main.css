@@ -182,10 +182,12 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    padding-bottom: 0;
   }
   .content-wrapper {
     display: block;
-    padding-top: 1.5rem;
+    padding-top: 4rem;
+    height:95vh;
   }
   .case-study-img {
     width: 100%;
