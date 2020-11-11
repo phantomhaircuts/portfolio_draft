@@ -186,8 +186,9 @@ body {
   }
   .content-wrapper {
     display: block;
-    padding-top: 4rem;
+    padding-top: 2rem;
     height:95vh;
+    padding-bottom: 10rem;
   }
   .case-study-img {
     width: 100%;
