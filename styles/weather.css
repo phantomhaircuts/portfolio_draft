@@ -1,0 +1,120 @@
+#scene {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-size: 200% 200%;
+    overflow: hidden;
+    -webkit-animation: bg-pulse 14s ease infinite;
+    -moz-animation: bg-pulse 14s ease infinite;
+    animation: bg-pulse 14s ease infinite;
+}
+
+.sprite-scene {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sprite-scene > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      transform-style: preserve-3d;
+      backface-visibility: visible;
+    }
+
+  .percipitation {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .rain.back-row {
+    display: block;
+    z-index: 1;
+    bottom: 60px;
+    opacity: 0.5;
+  }
+  
+  body.back-row-toggle .rain.back-row {
+    display: block;
+  }
+  .drop {
+    position: absolute;
+    bottom: 100%;
+    width: 15px;
+    height: 120px;
+    pointer-events: none;
+    animation: drop 0.5s linear infinite;
+  }
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(0vh);
+    }
+    75% {
+      transform: translateY(90vh);
+    }
+    100% {
+      transform: translateY(90vh);
+    }
+  }
+  
+  .stem {
+    width: 1px;
+    height: 60%;
+    margin-left: 7px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    animation: stem 0.5s linear infinite;
+  }
+  
+  @keyframes stem {
+    0% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Seasonal Sprites Style */
+.fall {
+    background: url("../assets/fall.png");
+}
+.spring {
+    background: url("../assets/spring.png");
+}
+.winter {
+    background: url("../assets/winter.png");
+}
+.summer {
+    background: url("../assets/summer.png");
+}
+
+@-webkit-keyframes bg-pulse {
+    0%{background-position:42% 0%}
+    50%{background-position:59% 100%}
+    100%{background-position:42% 0%}
+}
+@-moz-keyframes bg-pulse {
+    0%{background-position:42% 0%}
+    50%{background-position:59% 100%}
+    100%{background-position:42% 0%}
+}
+@keyframes bg-pulse {
+    0%{background-position:42% 0%}
+    50%{background-position:59% 100%}
+    100%{background-position:42% 0%}
+}
+

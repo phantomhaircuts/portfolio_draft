@@ -1,0 +1,42 @@
+@media only screen and (max-width: 858px) {
+    .nav-links {
+        padding: 0px 20px;
+      }
+  
+  .wrapper-wrapper {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 0;
+  }
+  .content-wrapper {
+    display: block;
+    padding-top: 2rem;
+    height:95vh;
+    padding-bottom: 10rem;
+  }
+  
+  .case-study-img {
+    width: 100%;
+  }
+  
+  .logo, .contact {
+      display: none;
+  }
+
+  .slider-wrapper {
+    padding-top: 10vh;
+    left: 1vw;
+}
+
+  .slider {
+    width: 500px;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 400px;
+    height: 400px;
+  }
+
+  }

@@ -10,17 +10,63 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
+header {
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   padding: 18px 10%;
+   z-index: 1000;
+   /* background: rgba(102, 102, 102, 0); */
+}
+
+.nav-links {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 25px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.5s ease
+}
+
+.nav-links a:hover {
+  color: rgba(255, 255, 255, 0.493);
+}
+
+.logo {
+  cursor: pointer;
+  font-weight: 600
+}
+
+.contact button {
+  padding: 9px 20px;
+  font-weight: 600;
+  border: none; 
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.contact button:hover {
+  background-color: #40404C;
+  color: white;
+}
+
 .wrapper-wrapper {
   position: absolute;
   z-index: 100;
-  height: 90vh;
+  height: 88vh;
   width: 96vw;
-  margin: 2vw;
+  margin: 0 2vw;
   background: rgba(90, 90, 90, 0.1);
 }
+
 .content-wrapper {
   position: absolute;
-  z-index: 1000;
+  z-index: 111;
   height: 84vh;
   width: 92vw;
   margin: 2vw;
@@ -54,149 +100,12 @@ body {
 .clickable {
     height:100vh;
     width: 100vw;
-    z-index: 100;
+    z-index: 10;
     /* background-color: red; */
     position: absolute;
 }
-#scene {
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    background-size: 200% 200%;
-    overflow: hidden;
-    -webkit-animation: bg-pulse 14s ease infinite;
-    -moz-animation: bg-pulse 14s ease infinite;
-    animation: bg-pulse 14s ease infinite;
-}
-
-.sprite-scene {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-.sprite-scene > div {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      transform-style: preserve-3d;
-      backface-visibility: visible;
-    }
-
-  .percipitation {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-
-  .rain.back-row {
-    display: block;
-    z-index: 1;
-    bottom: 60px;
-    opacity: 0.5;
-  }
-  
-  body.back-row-toggle .rain.back-row {
-    display: block;
-  }
-  .drop {
-    position: absolute;
-    bottom: 100%;
-    width: 15px;
-    height: 120px;
-    pointer-events: none;
-    animation: drop 0.5s linear infinite;
-  }
-  
-  @keyframes drop {
-    0% {
-      transform: translateY(0vh);
-    }
-    75% {
-      transform: translateY(90vh);
-    }
-    100% {
-      transform: translateY(90vh);
-    }
-  }
-  
-  .stem {
-    width: 1px;
-    height: 60%;
-    margin-left: 7px;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    animation: stem 0.5s linear infinite;
-  }
-  
-  @keyframes stem {
-    0% {
-      opacity: 1;
-    }
-    65% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  /* Seasonal Sprites Style */
-.fall {
-    background: url("../assets/fall.png");
-}
-.spring {
-    background: url("../assets/spring.png");
-}
-.winter {
-    background: url("../assets/winter.png");
-}
-.summer {
-    background: url("../assets/summer.png");
-}
-
-@-webkit-keyframes bg-pulse {
-    0%{background-position:42% 0%}
-    50%{background-position:59% 100%}
-    100%{background-position:42% 0%}
-}
-@-moz-keyframes bg-pulse {
-    0%{background-position:42% 0%}
-    50%{background-position:59% 100%}
-    100%{background-position:42% 0%}
-}
-@keyframes bg-pulse {
-    0%{background-position:42% 0%}
-    50%{background-position:59% 100%}
-    100%{background-position:42% 0%}
-}
-
-@media only screen and (max-width: 858px) {
-  .wrapper-wrapper {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    padding-bottom: 0;
-  }
-  .content-wrapper {
-    display: block;
-    padding-top: 2rem;
-    height:95vh;
-    padding-bottom: 10rem;
-  }
-  .case-study-img {
-    width: 100%;
-  }
-}
 
 ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+width: 0px;
+height: 0px;
 }
