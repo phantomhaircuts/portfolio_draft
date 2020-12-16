@@ -26,17 +26,17 @@
 
   .slider-wrapper {
     padding-top: 10vh;
-    left: 10px;
+    left: 1vw;
 }
 
   .slider {
-    width: 500px;
+    width: 100vw;
   }
   .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 400px;
-    height: 400px;
+    width: 90vw;
+    /* height: 400px; */
     left: 1px;
   }
   }
