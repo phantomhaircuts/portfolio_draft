@@ -13,29 +13,33 @@
     <link rel="stylesheet" href="https://use.typekit.net/ecx4dbs.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/cursor.css">
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="scripts/three.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.61/Tone.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
 </head>
 
 <body>
+    <div class="cursor cursor-small"></div>
+    <canvas class="cursor cursor-canvas"></canvas>
     <!-- <div class="clickable">
     </div> -->
     <div id="scene" class="falling-leaves">
         <header>
-            <span class="logo">Erik Anderson</span>
+            <span class="logo back-text">Erik Anderson</span>
             <nav>
                 <li class="nav-links"><a href="index.html"">Home</a></li>
                 <li class=" nav-links"><a href="two.html"">Projects</a></li>
                 <li class=" nav-links"><a href="#"">About</a></li>
             </nav>
-            <a class=" contact" href="#"><button>Contact</button></a>
+           <a class=" contact button"  href="mailto:itserikanderson@gmail.com">Contact</a>
         </header>
-        <!-- <div class="percipitation front-row"></div> -->
-        <!-- <div class="percipitation back-row"></div> -->
         <div class="slider-wrapper">
             <div class="slider">
                 <div class="slides">
@@ -48,6 +52,7 @@
             </div>
         </div>
         <script src="scripts/script.js" async defer></script>
+        <script src="scripts/cursor.js" async defer></script>
         <script>
         </script>
 </body>
