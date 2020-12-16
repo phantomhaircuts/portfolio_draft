@@ -263,66 +263,6 @@ function percipitation() {
     p[0].appendChild(d);
   }
 }
-
-// Tones 
-// const synth = new Tone.FMSynth({
-//     oscillator: {
-//         type: 'sine'
-//       },
-//       envelope: {
-//         attack: 0.1,
-//         decay: 2,
-//         sustain: 0.8,
-//         release: 5
-//       }
-//   }).toMaster();
-
-// function synthFire() {
-//     let randomOct = Math.floor((Math.random() * 4) + 1);
-//     let notes = ['A', 'D', 'C', 'G', 'C'];
-//     let note = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
-//     let noteTwo = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
-//     let noteThree = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
-//     let noteFour = notes[Math.floor(Math.random() * notes.length)] + Math.floor((Math.random() * 4) + 1);
-//     console.log(note + noteTwo + noteThree + noteFour);
-//     let now = Tone.now();
-
-//     progression = [
-//       ['C2', 'C4', 'D3'],
-//       [],
-//       []
-//     ];
-//     synth.triggerAttackRelease([note, noteTwo, noteFour], "8n", now);
-//   }
-
-function toneFire() {
-  let track;
-  console.log(weatherData.weather[0].description);
-  if (weatherData.weather[0].description == 'clear sky') {
-    track = '../assets/audio/clear_sky.mp3'
-  };
-  if (weatherData.weather[0].description == 'rain') {
-    track = '../assets/audio/rain.mp3'
-  };
-  if (weatherData.weather[0].description == 'snow') {
-    track = '../assets/audio/snow.mp3'
-  };
-  if (weatherData.weather[0].description == 'mist') {
-    track = '../assets/audio/mist.mp3'
-  };
-  if (weatherData.weather[0].description == 'shower rain') {
-    track = '../assets/audio/shower_rain.mp3'
-  };
-  if (weatherData.weather[0].description == 'scattered clouds') {
-    track = '../assets/audio/scattered_clouds.mp3'
-  };
-  if (weatherData.weather[0].description == 'broken clouds') {
-    track = '../assets/audio/broken_clouds.mp3'
-  };
-  const player = new Tone.Player(track).toDestination();
-  player.autostart = true;
-}
-
 //handle click
 document.addEventListener('click', function (event) {
   if (!event.target.matches('.clickable')) return;
