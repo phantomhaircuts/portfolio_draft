@@ -40,8 +40,8 @@
   .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     margin-right: 50px;
     margin: 60px;
     border-radius: 10px;
