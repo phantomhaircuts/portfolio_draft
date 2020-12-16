@@ -2,13 +2,13 @@
     padding-top: 20vh;
     display: flex;
     position: absolute;
-    left: 25vw;
+    left: 5vw;
     align-items: center;
     justify-content: center;
     z-index: 1;
 }
 .slider {
-    width: clamp(700px, 60vw, 80vw);
+    width: 100vw;
     text-align: center;
     overflow: hidden;
     margin: 0 auto;

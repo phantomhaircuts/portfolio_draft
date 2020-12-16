@@ -26,7 +26,7 @@
 
   .slider-wrapper {
     padding-top: 10vh;
-    left: 1vw;
+    left: 10px;
 }
 
   .slider {
@@ -37,6 +37,6 @@
     flex-shrink: 0;
     width: 400px;
     height: 400px;
+    left: 1px;
   }
-
   }
