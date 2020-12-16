@@ -27,6 +27,7 @@
   .slider-wrapper {
     padding-top: 5vh;
     left: 1vw;
+    overflow-x: hidden;
 }
 
   .slider {
