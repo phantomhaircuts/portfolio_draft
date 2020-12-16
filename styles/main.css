@@ -161,3 +161,18 @@ height: 0px;
   background: linear-gradient(90deg,#89fffd,#ef32d9);
   padding: 5px;
 }
+
+.index {
+  margin-left: 10em;
+}
+
+.index a {
+  text-decoration: none;
+  color: white;
+  font-size:2em;  
+}
+
+.index a:hover {
+  cursor: none;
+  color: black;
+}
