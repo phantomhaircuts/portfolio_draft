@@ -1,7 +1,7 @@
 #scene {
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: linear-gradient(to top, rgb(207, 217, 223) 0%, rgb(226, 235, 240) 100%);
     background-size: 200% 200%;
     overflow: hidden;
     -webkit-animation: bg-pulse 14s ease infinite;

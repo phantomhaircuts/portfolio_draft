@@ -1,5 +1,5 @@
 .slider-wrapper {
-    padding-top: 20vh;
+    padding-top: 2vh;
     display: flex;
     position: absolute;
     left: 5vw;
@@ -8,7 +8,7 @@
     z-index: 1;
 }
 .slider {
-    width: 100vw;
+    width: 85vw;
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
@@ -30,7 +30,8 @@
     height: 10px;
   }
   .slides::-webkit-scrollbar-thumb {
-    background: black;
+    background: rgba(37, 36, 36, 0.26);
+    padding-top: 10px;
     border-radius: 10px;
   }
   .slides::-webkit-scrollbar-track {

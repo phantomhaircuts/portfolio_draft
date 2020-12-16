@@ -1,8 +1,10 @@
+@import url("https://use.typekit.net/ecx4dbs.css");
+
 html {
     font-family: neue-haas-grotesk-display;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 html {font-size: 100%;}
@@ -17,7 +19,8 @@ body {
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5 {
