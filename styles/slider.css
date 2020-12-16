@@ -8,7 +8,7 @@
     z-index: 1;
 }
 .slider {
-    width: 700px;
+    width: clamp(700px, 60vw, 80vw);
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
